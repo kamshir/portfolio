@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="all">
+        <div class="box">
+            <form id="form" action="" method="POST">
+                <div class="information">
+                    <div class="inp info">
+                        <h3 class="lbl">Контактная информация:</h3>
+                        <div class="data"><input type="text" class="border" name="fio" placeholder="ФИО * (обязательное поле)" required></div>
+                        <div class="data"><input type="email" class="border" name="email" placeholder="E-mail" required></div>
+                        <div class="data"><input type="tel" class="border" name="phone" placeholder="+7 ( _ _ _ ) - _ _ _ - _ _ - _ _" required></div>
+                        <div class="data"><input type="text" class="border" name="shop" placeholder="Название школы / магазина или компании ..."></div>
+                    </div>
+                    <div class="inp born">
+                        <h3 class="lbl">Место нахождения:</h3>
+                        <div class="data slct">
+                            <div class="placeholder">Страна</div>
+                            <select name="country" class="chose country border" required>
+                                <option hidden disabled selected value></option>
+                                <option value="russia">Россия</option>
+                                <option value="usa">США</option>
+                                <option value="china">Китай</option>
+                                <option value="japan">Япония</option>
+                                <option value="england">Великобритания</option>
+                            </select>
+                        </div>
+                        <div class="data slct">
+                            <div class="placeholder">Область</div>
+                            <select name="area" class="chose area border" required>
+                                <option hidden disabled selected value></option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                            </select>
+                        </div>
+                        <div class="data"><input type="text" class="border" name="city" placeholder="Город" required></div>
+                        <div class="data"><input type="text" class="border" name="site" placeholder="Адрес сайта..."></div>
+                    </div>
+                    <div class="inp other">
+                        <h3 class="lbl">Другая информация:</h3>
+                        <div class="data"><input type="text" class="border" placeholder="Адрес инстаграм..."></div>
+                        <div class="data"><input type="text" class="border" placeholder="Укажите какие марки у Вас представлены?" required></div>
+                        <div class="data slct">
+                            <div class="placeholder">Выберите вид сотрудничества из списка</div>
+                            <select name="coop" class="chose border" required>
+                                <option hidden disabled selected value></option>
+                                <option value="1">sss</option>
+                            </select>
+                        </div>
+                        <div class="data slct">
+                            <div class="placeholder">Вы уже работали с нашей маркой?</div>
+                            <select name="mark" class="chose border" required>
+                                <option hidden selected value></option>
+                                <option value="yes">Да</option>
+                                <option value="no">Нет</option>
+                                <option value="want">Хочу попробовать</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="infa">
+                    <div class="comment">
+                        <textarea name="comment" class="com border" rows="5" placeholder="Комментарий..."></textarea>
+                    </div>
+                </div>
+                <div class="sub">
+                    <input type="submit" value="Отправить заявку" name="send" class="submit">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="lib/jquery-3.4.1.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

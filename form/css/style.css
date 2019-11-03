@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.all {
+    padding: 0 140px;
+    height: inherit;
+}
+
+.box {
+    height: inherit;
+    background: rgba(204, 204, 204, 0.719);
+    padding: 10px 0px;
+}
+
+.information {
+    width: 100%;
+    display: flex;
+}
+
+.inp {
+    width: 100%;
+}
+
+.lbl {
+    text-align: center;
+    font-size: 20px;
+    color: #000000;
+}
+
+.data {
+    padding: 0 20px;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.data input,
+.data select {
+    height: 40px;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.data select {
+    padding-left: 8px;
+}
+
+.data select option {
+    height: 40px;
+    width: 100%;
+    color: gray;
+}
+
+.data, .data .chose {
+    position: relative;
+    z-index: 1;
+}
+
+.placeholder {
+    color: gray;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    width: 78%;
+    background-color: #fff;
+    padding: 7px 0px;
+}
+
+.transparent {
+    color: transparent;
+    background-color: transparent;
+}
+
+.infa {
+    margin-top: 20px;
+    width: 66.7%;
+}
+
+.comment {
+    padding: 0 20px;
+}
+
+.com {
+    width: 100%;
+    resize: none;
+    padding: 10px;
+}
+
+.sub {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.submit {
+    background-color: rgb(226, 48, 48);
+    padding: 10px 25px;
+    border:0px;
+    color: #ffffff;
+}
+
+@media (max-width: 1220px) {
+    .information {
+        flex-wrap: wrap;
+    }
+    .infa {
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .all {
+        padding: 0 40px;
+    }
+}
